@@ -12,7 +12,8 @@ const Header = () => {
     
     </>
     return (
-        <div className="navbar bg-slate-100">
+        <div className=" bg-slate-100">
+  <div className="navbar max-w-7xl mx-auto">
   <div className="navbar-start">
     <div className="dropdown">
       <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -35,7 +36,7 @@ const Header = () => {
         {links}
       </ul>
     </div>
-    <a className="btn btn-ghost text-3xl font bold">Career Hub</a>
+    <a className="btn btn-ghost text-3xl font-extrabold">CareerHub</a>
   </div>
   <div className="navbar-center hidden lg:flex">
     <ul className="menu menu-horizontal px-1">
@@ -43,7 +44,8 @@ const Header = () => {
     </ul>
   </div>
   <div className="navbar-end">
-    <a className="btn">Button</a>
+    <a className="btn px-6 text-xl font-extrabold text-white bg-gradient-to-r from-[#7E90FE] to-[#9873FF] ">Star Applying</a>
+  </div>
   </div>
 </div>
     );
