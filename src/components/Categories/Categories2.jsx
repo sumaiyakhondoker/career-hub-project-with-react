@@ -4,11 +4,11 @@ import Category from "../Category/Category";
 
 const Categories2 = () => {
     const categories = useLoaderData()
-    console.log(categories);
+    // console.log(categories);
     
     return (
         
-      <div className="my-20">
+      <div className="my-20 ">
         <h2 className="text-4xl font-bold my-6 text-center">Categories</h2>
           <div className="grid grid-cols-4 gap-6 mb-4">
             {

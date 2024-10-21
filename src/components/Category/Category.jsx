@@ -5,7 +5,7 @@ import { SiCountingworkspro } from "react-icons/si";
 const Category = ({category}) => {
     const { category_name,availability} = category
     return (
-        <div className="p-10 bg-slate-50 rounded-lg">
+        <div className="p-10 bg-slate-100 rounded-lg border">
             {/* <img className="bg-violet-100 p-4 rounded-lg" src={logo} alt="" /> */}
             <SiCountingworkspro className='text-5xl'></SiCountingworkspro>
             <h4 className="text-xl font-extrabold mt-6 mb-2">{category_name}</h4>
