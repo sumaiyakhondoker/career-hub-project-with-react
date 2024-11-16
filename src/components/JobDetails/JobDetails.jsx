@@ -8,6 +8,7 @@ import { setAppliedJobApplications } from '../../utility/Localstorage';
 import { ToastContainer, toast } from 'react-toastify';
 
   import 'react-toastify/dist/ReactToastify.css';
+import { Helmet } from 'react-helmet-async';
 
 const JobDetails =() => {
     const jobs = useLoaderData()
@@ -27,7 +28,10 @@ const JobDetails =() => {
 
 
     return (
-        <div className=' '>
+        <div>
+            <Helmet>
+                <title>Job Details: {id}</title>
+            </Helmet>
             <div className='grid grid-cols-4 bg-slate-100'>
                 <div className='col-span-1 '><img  src="../../assets/images/bg1.png" alt="" /></div>
                 <div className='col-span-2 flex justify-center items-center'><h2 className='text-3xl font-extrabold'>Jobs Details</h2></div>

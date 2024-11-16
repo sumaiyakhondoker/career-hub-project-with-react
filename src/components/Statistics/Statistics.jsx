@@ -1,4 +1,5 @@
 import React from 'react';
+import { Helmet } from 'react-helmet-async';
 import { BarChart, Bar, Cell, XAxis, YAxis, CartesianGrid } from 'recharts';
 
 const Statistics = () => {
@@ -69,6 +70,10 @@ const TriangleBar = (props) => {
 
 
     return (
+      <div>
+        <Helmet>
+                <title>Career Hub | Statistics</title>
+            </Helmet>
         <BarChart
       width={1280}
       height={500}
@@ -89,6 +94,27 @@ const TriangleBar = (props) => {
         ))}
       </Bar>
     </BarChart>
+      </div>
+    //     <BarChart
+    //   width={1280}
+    //   height={500}
+    //   data={data}
+    //   margin={{
+    //     top: 20,
+    //     right: 30,
+    //     left: 30,
+    //     bottom: 5,
+    //   }}
+    // >
+    //   <CartesianGrid strokeDasharray="3 3" />
+    //   <XAxis dataKey="name" />
+    //   <YAxis />
+    //   <Bar dataKey="salary" fill="#8884d8" shape={<TriangleBar />} label={{ position: 'top' }}>
+    //     {data.map((entry, index) => (
+    //       <Cell key={`cell-${index}`} fill={colors[index % 20]} />
+    //     ))}
+    //   </Bar>
+    // </BarChart>
     );
 };
 

@@ -3,6 +3,7 @@ import { useLoaderData } from "react-router-dom";
 import { getAppliedJobApplications } from "../../utility/Localstorage";
 import AppliedJob from "../AppliedJob/AppliedJob";
 import { IoIosArrowDown } from "react-icons/io";
+import { Helmet } from "react-helmet-async";
 
 const AppliedJobs = () => {
   const [appliedJobs, setAppliedJobs] = useState([]);
@@ -33,6 +34,9 @@ const AppliedJobs = () => {
   }, [jobs]);
   return (
     <div>
+      <Helmet>
+      <title>Career Hub | Applied Jobs</title>
+      </Helmet>
       <div className="grid grid-cols-4 bg-slate-100">
         <div className="col-span-1 ">
           <img src="../../assets/images/bg1.png" alt="" />
