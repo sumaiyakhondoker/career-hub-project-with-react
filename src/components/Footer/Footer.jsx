@@ -39,7 +39,7 @@ const Footer = () => {
   </div>
   <div className="flex max-w-7xl mx-auto justify-between pt-6">
   
-  <p>@2023 CareerHub. All Rights Reserved </p>
+  <p>@2025 CareerHub. All Rights Reserved </p>
   <p>Powered by <Link to='/' className="underline">CareerHub</Link></p>
 </div>
 </footer>
