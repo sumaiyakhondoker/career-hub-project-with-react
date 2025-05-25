@@ -2,6 +2,7 @@
 import { Outlet, useNavigation } from 'react-router-dom';
 import Header from '../Header/Header';
 import Footer from '../Footer/Footer';
+import { ClipLoader } from 'react-spinners';
 
 const Root = () => {
 
@@ -13,7 +14,9 @@ const Root = () => {
             <Header></Header>
             {
                 navigation.state === 'loading' ? 
-                <p>Loading...</p>:
+                <div className='flex justify-center items-center  min-h-screen'>
+                    <ClipLoader color='#8c3bde' ></ClipLoader>
+                </div>:
                 <Outlet></Outlet>
             }
             
