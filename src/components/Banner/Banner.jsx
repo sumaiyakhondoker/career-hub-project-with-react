@@ -11,7 +11,7 @@ const Banner = () => {
                    <button className="btn px-6 text-xl font-extrabold text-white bg-gradient-to-r from-[#7E90FE] to-[#9873FF] ">Get Started</button>
                 </div>
                 <div>
-                    <img src="../../assets/images/user.png" alt="" />
+                    <img src="/user.png" alt="" />
                 </div>
             </div>
         </div>

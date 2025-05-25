@@ -39,13 +39,13 @@ const AppliedJobs = () => {
       </Helmet>
       <div className="grid grid-cols-4 bg-slate-100">
         <div className="col-span-1 ">
-          <img src="../../assets/images/bg1.png" alt="" />
+          <img src="/bg1.png" alt="" />
         </div>
         <div className="col-span-2 flex justify-center items-center">
           <h2 className="text-3xl font-extrabold">Applied Jobs</h2>
         </div>
         <div>
-          <img src="../../assets/images/bg2.png" alt="" />
+          <img src="/bg2.png" alt="" />
         </div>
       </div>
 

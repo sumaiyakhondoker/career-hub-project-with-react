@@ -33,9 +33,9 @@ const JobDetails =() => {
                 <title>Job Details: {id}</title>
             </Helmet>
             <div className='grid grid-cols-4 bg-slate-100'>
-                <div className='col-span-1 '><img  src="../../assets/images/bg1.png" alt="" /></div>
+                <div className='col-span-1 '><img  src="/bg1.png" alt="" /></div>
                 <div className='col-span-2 flex justify-center items-center'><h2 className='text-3xl font-extrabold'>Jobs Details</h2></div>
-                <div><img src="../../assets/images/bg2.png" alt="" /></div>
+                <div><img src="/bg2.png" alt="" /></div>
             </div>
 
             <div className='max-w-7xl mx-auto my-16 grid grid-cols-3 gap-6'>
